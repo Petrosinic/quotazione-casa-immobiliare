@@ -112,6 +112,15 @@ section { padding: 88px 0; }
 }
 .btn:active { transform: translateY(1px); }
 
+/* Su schermi molto stretti (~320-360px) i bottoni con testo lungo (es. CTA
+   in italiano di piu' parole) possono eccedere lo spazio disponibile: dato
+   che white-space:nowrap li forza su una riga, alcuni contenitori con
+   overflow:hidden o position:fixed li tagliavano invece di scrollare.
+   Sotto questa soglia permettiamo l'a capo su piu' righe. */
+@media (max-width: 400px) {
+  .btn { white-space: normal; text-align: center; padding: 14px 22px; }
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--gold-500), var(--gold-600));
   color: #23180a;
@@ -201,8 +210,9 @@ section { padding: 88px 0; }
   .main-nav { position: fixed; top: 96px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: flex-start; gap: 0; padding: 8px 24px 20px; box-shadow: var(--shadow-md); transform: translateY(-8px); opacity: 0; pointer-events: none; transition: all .2s ease; }
   .main-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .main-nav a { padding: 12px 0; width: 100%; border-bottom: 1px solid var(--border); }
+  .header-phone { padding: 13px; margin: -13px; }
   .header-phone span.phone-text { display: none; }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: block; padding: 12px; margin: -6px; }
   .header-actions .btn-primary.btn-sm span.btn-full-text { display: none; }
 }
 
@@ -321,7 +331,7 @@ section { padding: 88px 0; }
   border: 1.5px solid var(--border);
   background: var(--bg-soft);
   font-family: var(--ff-body);
-  font-size: 0.96rem;
+  font-size: 16px;
   color: var(--ink);
   transition: border-color .15s ease, background .15s ease;
 }
@@ -696,6 +706,10 @@ section { padding: 88px 0; }
   border-top: 1px solid var(--border);
 }
 @media (max-width: 720px) { .mobile-cta-bar { display: flex; } body { padding-bottom: 74px; } }
+/* Sotto i 400px il testo dei bottoni puo' andare su due righe (vedi regola
+   .btn white-space:normal sopra), rendendo la barra fissa piu' alta:
+   aumentiamo lo spazio riservato per non nascondere il footer sotto. */
+@media (max-width: 400px) { body { padding-bottom: 112px; } }
 
 .whatsapp-float {
   position: fixed;

@@ -20,12 +20,17 @@ robots.txt, sitemap.xml, llms.txt   SEO tecnico e ottimizzazione per motori di r
 - **FAB** (Feature–Advantage–Benefit) nelle 4 card USP: ogni card espone la caratteristica, il vantaggio pratico e il beneficio finale per il proprietario.
 - Prova sociale: recensioni verosimili, statistiche, FAQ per gestire le obiezioni più comuni.
 
-## Prima di pubblicare: cosa personalizzare
+## Stato attuale (già fatto)
 
-1. **Dati reali dell'agenzia**: telefono (393 540 1286) ed email (nicola.experiax8@gmail.com) sono già impostati. Non sono presenti link social (l'agenzia non ne ha). Restano segnaposto indirizzo e P.IVA — cercare `quotazionecasaimmobiliare.it` in `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`, `llms.txt` e sostituirli quando avrai il dominio definitivo.
-2. **Dominio**: aggiornare `og:url`, `canonical`, il file `sitemap.xml` e `robots.txt` con il dominio reale una volta registrato.
-3. **Recensioni**: quelle presenti sono **testimonianze di esempio**, scritte per rappresentare le USP dell'agenzia (valorizzazione, database acquirenti, velocità, assistenza completa). Sostituirle con recensioni reali (es. estratte da Google Business Profile) prima del lancio, e valutare se aggiungere in quel momento anche i relativi badge/link a Google.
-4. **Privacy/Cookie Policy**: generate e ospitate su Iubenda (Privacy Policy ID `57178582`), linkate da footer, form e da `privacy.html`. Se in futuro si aggiungono altri strumenti di tracciamento (Meta Pixel, Google Ads, ecc.), vanno dichiarati anche nella configurazione Iubenda, non solo nel codice.
+- **Dominio**: `www.quotazionecasaimmobiliare.it`, registrato, DNS configurato, HTTPS attivo e forzato. Usato in modo coerente in `CNAME`, canonical, Open Graph, dati strutturati, `sitemap.xml`, `robots.txt`, `llms.txt`/`llms-full.txt`.
+- **Contatti reali**: telefono/WhatsApp `393 540 1286`, email `nicola.experiax8@gmail.com`. Nessun link social (l'agenzia non ne ha).
+- **Privacy/Cookie Policy**: generate e ospitate su Iubenda (Privacy Policy ID `57178582`), linkate da footer, form e da `privacy.html`.
+
+## Prima di pubblicare ufficialmente: cosa resta da personalizzare
+
+1. **Indirizzo e P.IVA**: ancora segnaposto (`Corso Buenos Aires, 1, 20124 Milano` / `P.IVA 00000000000`) in `index.html` (JSON-LD e footer) e `privacy.html`. Cercare questi valori e sostituirli con i dati reali dell'agenzia.
+2. **Recensioni**: quelle presenti sono **testimonianze di esempio**, scritte per rappresentare le USP dell'agenzia (valorizzazione, database acquirenti, velocità, assistenza completa). Sostituirle con recensioni reali (es. estratte da Google Business Profile) prima del lancio, e valutare se aggiungere in quel momento anche i relativi badge/link a Google.
+3. **Nuovi strumenti di tracciamento**: se in futuro si aggiungono Meta Pixel, Google Ads, ecc., vanno dichiarati anche nella configurazione Iubenda, non solo nel codice.
 
 ## Form collegati a Formspree
 
