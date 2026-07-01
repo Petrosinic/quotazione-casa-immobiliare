@@ -1,0 +1,24 @@
+# Valore Immobiliare
+
+> Agenzia immobiliare a Milano e provincia specializzata nella valorizzazione e vendita di immobili residenziali. Offre una valutazione professionale gratuita e senza impegno, e propone gli immobili a un database esclusivo di acquirenti e investitori già interessati ad acquistare in zona.
+
+## Servizi principali
+- Valutazione immobiliare gratuita e senza impegno (sopralluogo + report entro 48h)
+- Accesso a un database di acquirenti e investitori pronti a comprare a Milano e provincia
+- Marketing immobiliare: fotografia professionale, planimetrie, home staging, pubblicazione multi-portale
+- Assistenza completa alla vendita: trattativa, contrattualistica, pratiche fino al rogito notarile
+
+## Area servita
+Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza, Rho, San Donato Milanese.
+
+## Come contattare l'agenzia
+- Form di richiesta valutazione gratuita disponibile sulla home page (sezione "Richiedi la valutazione gratuita")
+- Telefono: 02 0000000
+- WhatsApp: https://wa.me/390000000000
+- Email: info@valoreimmobiliare-milano.it
+
+## Domande frequenti
+Vedi la sezione FAQ della home page (https://www.valoreimmobiliare-milano.it/#faq) per risposte dirette su: gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte e funzionamento del database acquirenti.
+
+## Note per i crawler
+Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Le informazioni di contatto (indirizzo, telefono, P.IVA) presenti sul sito sono segnaposto: aggiornarle con i dati reali dell'agenzia prima della pubblicazione.
