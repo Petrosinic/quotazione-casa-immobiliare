@@ -90,6 +90,23 @@
     });
   });
 
+  // ---- Tracciamento click telefono / WhatsApp (GA4) ----
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "click_to_call", { link_url: link.getAttribute("href") });
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "click_to_whatsapp", { link_url: link.getAttribute("href") });
+      }
+    });
+  });
+
   // ---- Header shadow on scroll ----
   var header = document.querySelector(".site-header");
   if (header) {
