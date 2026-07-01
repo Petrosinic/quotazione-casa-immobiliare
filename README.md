@@ -45,7 +45,7 @@ Ricorda di confermare l'indirizzo email della dashboard Formspree al primo invio
 - Meta title/description, Open Graph e Twitter Card già impostati.
 - Dati strutturati **JSON-LD**: `RealEstateAgent`/`LocalBusiness` (NAP, area servita, orari) e `FAQPage`. Volutamente **non** è stato inserito un markup `AggregateRating`/`Review`, perché le recensioni in pagina sono di esempio: aggiungere lo schema recensioni solo quando saranno sostituite con recensioni reali e verificabili (per rispettare le linee guida sui dati strutturati di Google).
 - `robots.txt` e `sitemap.xml` pronti, da aggiornare col dominio definitivo.
-- `llms.txt`: file secondo la convenzione emergente per aiutare i motori di risposta AI (ChatGPT, Perplexity, Google AI Overviews) a descrivere correttamente l'attività — utile ai fini GEO (Generative Engine Optimization).
+- `llms.txt` + `llms-full.txt`: convenzione emergente per aiutare i motori di risposta AI (ChatGPT, Perplexity, Google AI Overviews) a descrivere correttamente l'attività — utile ai fini GEO (Generative Engine Optimization). `llms.txt` è l'indice sintetico con i link, `llms-full.txt` contiene il testo integrale della pagina pronto da leggere senza dover interpretare HTML/CSS.
 - Contenuti in FAQ scritti come risposte dirette e autonome, per aumentare la probabilità di essere citati/estratti dai motori di risposta AI oltre che nei rich results di Google.
 
 ## Pubblicazione su GitHub Pages

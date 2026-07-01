@@ -20,5 +20,8 @@ Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza,
 ## Domande frequenti
 Vedi la sezione FAQ della home page (https://www.quotazionecasaimmobiliare.it/#faq) per risposte dirette su: gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte e funzionamento del database acquirenti.
 
+## Contenuto completo
+Per il testo integrale della pagina (proposta, vantaggi, recensioni, FAQ complete) vedi https://www.quotazionecasaimmobiliare.it/llms-full.txt
+
 ## Note per i crawler
-Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Le informazioni di contatto (indirizzo, telefono, P.IVA) presenti sul sito sono segnaposto: aggiornarle con i dati reali dell'agenzia prima della pubblicazione.
+Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Indirizzo e P.IVA presenti sul sito sono ancora segnaposto: aggiornarli con i dati reali dell'agenzia non appena disponibili.
