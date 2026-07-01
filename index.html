@@ -206,12 +206,15 @@
       </div>
 
       <div class="hero-form-wrap">
-        <form class="hero-form-card" id="form-valutazione" aria-labelledby="form-valutazione-title">
+        <form class="hero-form-card" id="form-valutazione" aria-labelledby="form-valutazione-title" action="https://formspree.io/f/mdarwzka" method="POST">
           <span class="badge-free">100% Gratuita</span>
           <h3 id="form-valutazione-title">Scopri quanto vale il tuo immobile</h3>
           <p class="form-sub">Compila il form: ti ricontattiamo entro 24h per fissare il sopralluogo gratuito.</p>
 
           <div class="form-fields">
+            <input type="hidden" name="_subject" value="Nuova richiesta di valutazione dal sito">
+            <input type="hidden" name="provenienza" value="Form hero">
+            <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off">
             <div class="field">
               <label for="nome">Nome e cognome</label>
               <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required autocomplete="name">
@@ -258,6 +261,13 @@
             <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
             <h3>Richiesta ricevuta!</h3>
             <p>Grazie! Un nostro consulente ti contatterà entro 24h per fissare il sopralluogo gratuito.</p>
+          </div>
+
+          <div class="form-error" id="form-error">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+            <h3>Invio non riuscito</h3>
+            <p>Si è verificato un problema di connessione. Riprova, oppure scrivici direttamente:</p>
+            <a href="https://wa.me/390000000000?text=Ciao%2C%20vorrei%20richiedere%20una%20valutazione%20gratuita%20del%20mio%20immobile" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Scrivici su WhatsApp</a>
           </div>
         </form>
       </div>
@@ -588,11 +598,14 @@
         </div>
       </div>
 
-      <form class="hero-form-card" id="form-valutazione-2" aria-labelledby="form-valutazione-2-title">
+      <form class="hero-form-card" id="form-valutazione-2" aria-labelledby="form-valutazione-2-title" action="https://formspree.io/f/mdarwzka" method="POST">
         <span class="badge-free">100% Gratuita</span>
         <h3 id="form-valutazione-2-title">Richiedi la tua valutazione</h3>
         <p class="form-sub">Ti ricontattiamo entro 24h, senza impegno.</p>
         <div class="form-fields">
+          <input type="hidden" name="_subject" value="Nuova richiesta di valutazione dal sito">
+          <input type="hidden" name="provenienza" value="Form CTA finale">
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off">
           <div class="field">
             <label for="nome2">Nome e cognome</label>
             <input type="text" id="nome2" name="nome" placeholder="Mario Rossi" required autocomplete="name">
@@ -622,6 +635,13 @@
           <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
           <h3>Richiesta ricevuta!</h3>
           <p>Grazie! Un nostro consulente ti contatterà entro 24h per fissare il sopralluogo gratuito.</p>
+        </div>
+
+        <div class="form-error" id="form-error-2">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+          <h3>Invio non riuscito</h3>
+          <p>Si è verificato un problema di connessione. Riprova, oppure scrivici direttamente:</p>
+          <a href="https://wa.me/390000000000?text=Ciao%2C%20vorrei%20richiedere%20una%20valutazione%20gratuita%20del%20mio%20immobile" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Scrivici su WhatsApp</a>
         </div>
       </form>
     </div>

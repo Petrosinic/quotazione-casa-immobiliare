@@ -33,9 +33,8 @@
   });
 
   // ---- Lead forms ----
-  // NOTA: pagina statica per GitHub Pages. Per ricevere davvero le richieste,
-  // collegare l'attributo action del <form> a un endpoint tipo Formspree/Netlify Forms
-  // (vedi README.md). Qui gestiamo comunque UX, validazione base e tracking eventi.
+  // I form inviano i dati via fetch all'endpoint Formspree impostato nell'attributo
+  // action del tag <form> (vedi README.md per come cambiarlo/collegarne uno nuovo).
   var forms = document.querySelectorAll("#form-valutazione, #form-valutazione-2");
 
   forms.forEach(function (form) {
@@ -46,24 +45,48 @@
         return;
       }
 
-      // Evento per Google Analytics / Google Ads (se GA4 è installato)
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "generate_lead", {
-          form_id: form.id,
-          value: 1,
-          currency: "EUR"
-        });
-      }
-
       var fields = form.querySelector(".form-fields");
       var success = form.querySelector(".form-success");
-      if (fields) fields.style.display = "none";
-      if (success) success.classList.add("show");
-      else {
-        form.reset();
-        window.location.href = "https://wa.me/390000000000?text=" +
-          encodeURIComponent("Ciao, ho richiesto una valutazione gratuita dal sito.");
+      var error = form.querySelector(".form-error");
+      var submitBtn = form.querySelector("button[type=submit]");
+
+      if (error) error.classList.remove("show");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.dataset.originalText = submitBtn.dataset.originalText || submitBtn.textContent;
+        submitBtn.textContent = "Invio in corso…";
       }
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error("Formspree error " + response.status);
+
+          // Evento per Google Analytics / Google Ads (se GA4 è installato)
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "generate_lead", {
+              form_id: form.id,
+              value: 1,
+              currency: "EUR"
+            });
+          }
+
+          if (fields) fields.style.display = "none";
+          if (success) success.classList.add("show");
+          form.reset();
+        })
+        .catch(function () {
+          if (error) error.classList.add("show");
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = submitBtn.dataset.originalText;
+          }
+        });
     });
   });
 

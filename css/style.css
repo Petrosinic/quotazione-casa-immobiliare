@@ -364,6 +364,15 @@ section { padding: 88px 0; }
 .form-success.show { display: block; }
 .form-success svg { color: var(--success); margin-bottom: 10px; }
 
+.form-error {
+  display: none;
+  text-align: center;
+  padding: 20px 6px;
+}
+.form-error.show { display: block; }
+.form-error svg { color: #c0433f; margin-bottom: 10px; }
+.form-error .btn { margin-top: 10px; }
+
 /* ---------- Logos / social proof strip ---------- */
 .proof-strip {
   padding: 34px 0;
