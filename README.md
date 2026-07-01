@@ -25,7 +25,7 @@ robots.txt, sitemap.xml, llms.txt   SEO tecnico e ottimizzazione per motori di r
 1. **Dati reali dell'agenzia**: telefono (393 540 1286) ed email (nicola.experiax8@gmail.com) sono già impostati. Non sono presenti link social (l'agenzia non ne ha). Restano segnaposto indirizzo e P.IVA — cercare `quotazionecasaimmobiliare.it` in `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`, `llms.txt` e sostituirli quando avrai il dominio definitivo.
 2. **Dominio**: aggiornare `og:url`, `canonical`, il file `sitemap.xml` e `robots.txt` con il dominio reale una volta registrato.
 3. **Recensioni**: quelle presenti sono **testimonianze di esempio**, scritte per rappresentare le USP dell'agenzia (valorizzazione, database acquirenti, velocità, assistenza completa). Sostituirle con recensioni reali (es. estratte da Google Business Profile) prima del lancio, e valutare se aggiungere in quel momento anche i relativi badge/link a Google.
-4. **Privacy Policy**: il testo in `privacy.html` è un modello generico — farlo revisionare da un consulente privacy/legale con i dati reali del titolare del trattamento e degli strumenti di tracciamento effettivamente installati (GA4, Meta Pixel, Google Ads, ecc.).
+4. **Privacy/Cookie Policy**: generate e ospitate su Iubenda (Privacy Policy ID `57178582`), linkate da footer, form e da `privacy.html`. Se in futuro si aggiungono altri strumenti di tracciamento (Meta Pixel, Google Ads, ecc.), vanno dichiarati anche nella configurazione Iubenda, non solo nel codice.
 
 ## Form collegati a Formspree
 
