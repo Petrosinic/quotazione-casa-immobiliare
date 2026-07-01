@@ -4,11 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PPVYRKSVR"></script>
+<!-- Google Consent Mode: stato di default "negato" finche' l'utente non sceglie
+     dal banner cookie Iubenda. Deve stare prima di gtag.js e dello script Iubenda. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+</script>
+
+<!-- TODO Iubenda: incollare qui lo snippet del banner cookie (Cookie Solution),
+     PRIMA del tag gtag.js qui sotto, cosi' puo' aggiornare il consenso non appena
+     l'utente sceglie dal banner. -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PPVYRKSVR"></script>
+<script>
   gtag('js', new Date());
   gtag('config', 'G-9PPVYRKSVR');
 </script>
