@@ -1,4 +1,4 @@
-# Valore Immobiliare
+# Quotazione Casa Immobiliare
 
 > Agenzia immobiliare a Milano e provincia specializzata nella valorizzazione e vendita di immobili residenziali. Offre una valutazione professionale gratuita e senza impegno, e propone gli immobili a un database esclusivo di acquirenti e investitori già interessati ad acquistare in zona.
 
@@ -15,10 +15,10 @@ Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza,
 - Form di richiesta valutazione gratuita disponibile sulla home page (sezione "Richiedi la valutazione gratuita")
 - Telefono: 02 0000000
 - WhatsApp: https://wa.me/390000000000
-- Email: info@valoreimmobiliare-milano.it
+- Email: info@quotazionecasaimmobiliare.it
 
 ## Domande frequenti
-Vedi la sezione FAQ della home page (https://www.valoreimmobiliare-milano.it/#faq) per risposte dirette su: gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte e funzionamento del database acquirenti.
+Vedi la sezione FAQ della home page (https://www.quotazionecasaimmobiliare.it/#faq) per risposte dirette su: gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte e funzionamento del database acquirenti.
 
 ## Note per i crawler
 Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Le informazioni di contatto (indirizzo, telefono, P.IVA) presenti sul sito sono segnaposto: aggiornarle con i dati reali dell'agenzia prima della pubblicazione.

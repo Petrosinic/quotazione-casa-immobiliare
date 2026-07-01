@@ -1,6 +1,6 @@
-# Valore Immobiliare — Landing Page
+# Quotazione Casa Immobiliare — Landing Page
 
-Landing page statica (HTML/CSS/JS, nessuna dipendenza da build) per la lead generation di **Valore Immobiliare**, agenzia immobiliare a Milano e provincia. L'obiettivo è generare contatti di proprietari interessati a vendere il proprio immobile, tramite una valutazione gratuita e senza impegno.
+Landing page statica (HTML/CSS/JS, nessuna dipendenza da build) per la lead generation di **Quotazione Casa Immobiliare**, agenzia immobiliare a Milano e provincia. L'obiettivo è generare contatti di proprietari interessati a vendere il proprio immobile, tramite una valutazione gratuita e senza impegno.
 
 ## Struttura del progetto
 
@@ -16,13 +16,13 @@ robots.txt, sitemap.xml, llms.txt   SEO tecnico e ottimizzazione per motori di r
 ## Framework di copywriting utilizzati
 
 - **AIDA** nella hero: attenzione (eyebrow + headline), interesse (sottotitolo su valutazione gratuita + database acquirenti), desiderio (USP/FAB), azione (CTA "Richiedi la valutazione gratuita").
-- **PAS** nella sezione "Perché noi": Problema (rischi di vendere male), Amplificazione (costo di aspettare/sbagliare prezzo), Soluzione (metodo Valore Immobiliare).
+- **PAS** nella sezione "Perché noi": Problema (rischi di vendere male), Amplificazione (costo di aspettare/sbagliare prezzo), Soluzione (metodo Quotazione Casa Immobiliare).
 - **FAB** (Feature–Advantage–Benefit) nelle 4 card USP: ogni card espone la caratteristica, il vantaggio pratico e il beneficio finale per il proprietario.
 - Prova sociale: recensioni verosimili, statistiche, FAQ per gestire le obiezioni più comuni.
 
 ## Prima di pubblicare: cosa personalizzare
 
-1. **Dati reali dell'agenzia**: telefono, email, indirizzo, P.IVA, link social e numero WhatsApp sono segnaposto — cercare `0200000` e `valoreimmobiliare-milano.it` in `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`, `llms.txt` e sostituirli.
+1. **Dati reali dell'agenzia**: telefono, email, indirizzo, P.IVA, link social e numero WhatsApp sono segnaposto — cercare `0200000` e `quotazionecasaimmobiliare.it` in `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`, `llms.txt` e sostituirli.
 2. **Dominio**: aggiornare `og:url`, `canonical`, il file `sitemap.xml` e `robots.txt` con il dominio reale una volta registrato.
 3. **Recensioni**: quelle presenti sono **testimonianze di esempio**, scritte per rappresentare le USP dell'agenzia (valorizzazione, database acquirenti, velocità, assistenza completa). Sostituirle con recensioni reali (es. estratte da Google Business Profile) prima del lancio, e valutare se aggiungere in quel momento anche i relativi badge/link a Google.
 4. **Privacy Policy**: il testo in `privacy.html` è un modello generico — farlo revisionare da un consulente privacy/legale con i dati reali del titolare del trattamento e degli strumenti di tracciamento effettivamente installati (GA4, Meta Pixel, Google Ads, ecc.).
@@ -47,7 +47,7 @@ Una volta collegato un endpoint reale, opzionalmente rimuovere/adattare la logic
 
 ## Pubblicazione su GitHub Pages
 
-1. Creare un repository su GitHub (es. `valore-immobiliare-landing`) e caricare tutti i file di questa cartella nella root del repository.
+1. Creare un repository su GitHub (es. `quotazione-casa-immobiliare-landing`) e caricare tutti i file di questa cartella nella root del repository.
 2. Su GitHub: **Settings → Pages → Source**, selezionare il branch `main` e la cartella `/ (root)`.
 3. Dopo qualche minuto la pagina sarà online su `https://<utente>.github.io/<repo>/` (oppure sul dominio personalizzato configurato in **Settings → Pages → Custom domain**).
 4. Se si usa un dominio personalizzato, aggiornare gli URL assoluti (canonical, Open Graph, sitemap, robots) con il dominio definitivo.

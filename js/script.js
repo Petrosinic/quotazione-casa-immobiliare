@@ -1,4 +1,4 @@
-// Valore Immobiliare — interazioni landing page
+// Quotazione Casa Immobiliare — interazioni landing page
 (function () {
   "use strict";
 
