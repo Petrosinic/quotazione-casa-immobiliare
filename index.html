@@ -21,11 +21,18 @@
 <!-- Iubenda Cookie Solution: banner di consenso cookie -->
 <script async type="text/javascript" src="https://embeds.iubenda.com/widgets/00c90db8-ea64-43c1-9f07-15790a9fdcb1.js"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PPVYRKSVR"></script>
+<!-- Google tag (gtag.js): caricato dopo l'evento load per non competere con
+     il rendering iniziale. Gli eventi intanto si accodano nel dataLayer e
+     vengono processati appena lo script arriva — non se ne perde nessuno. -->
 <script>
   gtag('js', new Date());
   gtag('config', 'G-9PPVYRKSVR');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9PPVYRKSVR';
+    document.head.appendChild(s);
+  });
 </script>
 
 <title>Valutazione Gratuita Casa a Milano | Quotazione Casa Immobiliare</title>
