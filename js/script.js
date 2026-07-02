@@ -110,8 +110,14 @@
   // ---- Header shadow on scroll ----
   var header = document.querySelector(".site-header");
   if (header) {
+    var scrollTicking = false;
     window.addEventListener("scroll", function () {
-      header.style.boxShadow = window.scrollY > 8 ? "0 4px 18px rgba(15,28,51,0.08)" : "none";
-    });
+      if (scrollTicking) return;
+      scrollTicking = true;
+      requestAnimationFrame(function () {
+        header.classList.toggle("is-scrolled", window.scrollY > 8);
+        scrollTicking = false;
+      });
+    }, { passive: true });
   }
 })();

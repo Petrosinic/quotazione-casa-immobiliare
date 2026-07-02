@@ -19,7 +19,7 @@
 </script>
 
 <!-- Iubenda Cookie Solution: banner di consenso cookie -->
-<script type="text/javascript" src="https://embeds.iubenda.com/widgets/00c90db8-ea64-43c1-9f07-15790a9fdcb1.js"></script>
+<script async type="text/javascript" src="https://embeds.iubenda.com/widgets/00c90db8-ea64-43c1-9f07-15790a9fdcb1.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PPVYRKSVR"></script>
@@ -57,7 +57,12 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<!-- Caricamento non bloccante dei font: la richiesta parte subito ma non
+     ferma il rendering della pagina; media="print" + onload e' il trick
+     standard per farlo, con noscript come fallback. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -175,7 +180,10 @@
 <header class="site-header">
   <div class="container">
     <a href="#top" class="brand" aria-label="Quotazione Casa Immobiliare - Torna alla home">
-      <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare - Valorizzazione immobili a Milano e provincia" width="272" height="120">
+      <picture>
+        <source srcset="images/logo-header.webp" type="image/webp">
+        <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare - Valorizzazione immobili a Milano e provincia" width="272" height="120">
+      </picture>
     </a>
     <nav class="main-nav" id="main-nav">
       <a href="#come-funziona">Come funziona</a>
@@ -674,7 +682,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="footer-logo-badge">
-          <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare" width="222" height="98">
+          <picture>
+            <source srcset="images/logo-header.webp" type="image/webp">
+            <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare" width="222" height="98" loading="lazy">
+          </picture>
         </span>
         <p>Agenzia immobiliare specializzata nella valorizzazione e vendita di immobili a Milano e provincia.</p>
       </div>

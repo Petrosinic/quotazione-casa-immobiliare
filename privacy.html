@@ -8,10 +8,14 @@
 <meta name="robots" content="noindex, follow">
 
 <!-- Iubenda Cookie Solution: banner di consenso cookie -->
-<script type="text/javascript" src="https://embeds.iubenda.com/widgets/00c90db8-ea64-43c1-9f07-15790a9fdcb1.js"></script>
+<script async type="text/javascript" src="https://embeds.iubenda.com/widgets/00c90db8-ea64-43c1-9f07-15790a9fdcb1.js"></script>
 
 <link rel="icon" type="image/png" href="images/favicon-32.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/style.css">
 <style>
   .legal-wrap { max-width: 820px; margin: 0 auto; padding: 60px 24px 100px; }
@@ -24,7 +28,10 @@
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand" aria-label="Quotazione Casa Immobiliare - Torna alla home">
-      <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare" width="272" height="120">
+      <picture>
+        <source srcset="images/logo-header.webp" type="image/webp">
+        <img src="images/logo-header.png" alt="Quotazione Casa Immobiliare" width="272" height="120">
+      </picture>
     </a>
     <div class="header-actions">
       <a href="index.html" class="btn btn-outline btn-sm">Torna al sito</a>

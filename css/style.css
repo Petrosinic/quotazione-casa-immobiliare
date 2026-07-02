@@ -159,7 +159,10 @@ section { padding: 88px 0; }
   background: rgba(255,255,255,0.92);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  transition: box-shadow .15s ease;
 }
+.site-header.is-scrolled { box-shadow: 0 4px 18px rgba(15,28,51,0.08); }
 .site-header .container {
   display: flex;
   align-items: center;
