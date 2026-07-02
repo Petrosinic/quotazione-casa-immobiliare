@@ -14,7 +14,7 @@ Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza,
 ## Pagine
 - [Home page](https://www.quotazionecasaimmobiliare.it/): proposta, vantaggi, come funziona, recensioni, form di richiesta valutazione gratuita
 - [Testo integrale della pagina](https://www.quotazionecasaimmobiliare.it/llms-full.txt): contenuto completo in formato testo per motori di risposta AI
-- [Domande frequenti](https://www.quotazionecasaimmobiliare.it/#faq): gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte, funzionamento del database acquirenti
+- [Domande frequenti](https://www.quotazionecasaimmobiliare.it/#faq): gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte, funzionamento del database acquirenti, costi del servizio, vendere da soli o con agenzia
 - [Privacy Policy](https://www.iubenda.com/privacy-policy/57178582): informativa sul trattamento dei dati
 - [Cookie Policy](https://www.iubenda.com/privacy-policy/57178582/cookie-policy): informativa sui cookie
 
