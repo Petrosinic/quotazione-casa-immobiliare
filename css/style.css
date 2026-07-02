@@ -3,6 +3,50 @@
    Design system: bianco pulito, blu navy + oro (coerenti col logo)
    ========================================================= */
 
+/* Font di fallback con metriche adattate a Poppins/Inter: i font web si
+   caricano in modo asincrono, e senza questi il testo cambia larghezza
+   (e quindi numero di righe) allo swap, causando layout shift nella hero.
+   size-adjust misurato empiricamente sul titolo della pagina. */
+@font-face {
+  font-family: "Poppins Fallback";
+  src: local("Arial");
+  font-weight: 100 500;
+  size-adjust: 107.75%;
+  ascent-override: 97.4%;
+  descent-override: 32.5%;
+  line-gap-override: 0%;
+}
+/* Faccia separata per i pesi >=600: local("Arial") da solo non applica il
+   grassetto sintetico, quindi il testo bold del fallback risultava troppo
+   stretto rispetto a Poppins bold (H1 su meno righe -> layout shift). */
+@font-face {
+  font-family: "Poppins Fallback";
+  src: local("Arial Bold");
+  font-weight: 501 900;
+  size-adjust: 107.75%;
+  ascent-override: 97.4%;
+  descent-override: 32.5%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  font-weight: 100 500;
+  size-adjust: 106%;
+  ascent-override: 91.4%;
+  descent-override: 22.8%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial Bold");
+  font-weight: 501 900;
+  size-adjust: 106%;
+  ascent-override: 91.4%;
+  descent-override: 22.8%;
+  line-gap-override: 0%;
+}
+
 :root {
   --navy-950: #0f1c33;
   --navy-900: #16233f;
@@ -27,8 +71,8 @@
   --shadow-md: 0 12px 32px rgba(15, 28, 51, 0.10);
   --shadow-lg: 0 24px 60px rgba(15, 28, 51, 0.16);
   --container: 1180px;
-  --ff-head: "Poppins", "Segoe UI", sans-serif;
-  --ff-body: "Inter", "Segoe UI", sans-serif;
+  --ff-head: "Poppins", "Poppins Fallback", sans-serif;
+  --ff-body: "Inter", "Inter Fallback", sans-serif;
 }
 
 * { box-sizing: border-box; }
