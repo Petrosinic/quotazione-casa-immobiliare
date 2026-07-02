@@ -11,17 +11,17 @@
 ## Area servita
 Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza, Rho, San Donato Milanese.
 
-## Come contattare l'agenzia
-- Form di richiesta valutazione gratuita disponibile sulla home page (sezione "Richiedi la valutazione gratuita")
-- Telefono: 393 540 1286
-- WhatsApp: https://wa.me/393935401286
-- Email: nicola.experiax8@gmail.com
+## Pagine
+- [Home page](https://www.quotazionecasaimmobiliare.it/): proposta, vantaggi, come funziona, recensioni, form di richiesta valutazione gratuita
+- [Testo integrale della pagina](https://www.quotazionecasaimmobiliare.it/llms-full.txt): contenuto completo in formato testo per motori di risposta AI
+- [Domande frequenti](https://www.quotazionecasaimmobiliare.it/#faq): gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte, funzionamento del database acquirenti
+- [Privacy Policy](https://www.iubenda.com/privacy-policy/57178582): informativa sul trattamento dei dati
+- [Cookie Policy](https://www.iubenda.com/privacy-policy/57178582/cookie-policy): informativa sui cookie
 
-## Domande frequenti
-Vedi la sezione FAQ della home page (https://www.quotazionecasaimmobiliare.it/#faq) per risposte dirette su: gratuità della valutazione, tempistiche, documenti necessari per vendere casa, zone coperte e funzionamento del database acquirenti.
-
-## Contenuto completo
-Per il testo integrale della pagina (proposta, vantaggi, recensioni, FAQ complete) vedi https://www.quotazionecasaimmobiliare.it/llms-full.txt
+## Contatti
+- [Chiama](tel:+393935401286): 393 540 1286
+- [WhatsApp](https://wa.me/393935401286): 393 540 1286
+- [Email](mailto:nicola.experiax8@gmail.com): nicola.experiax8@gmail.com
 
 ## Note per i crawler
 Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Indirizzo e P.IVA presenti sul sito sono ancora segnaposto: aggiornarli con i dati reali dell'agenzia non appena disponibili.
