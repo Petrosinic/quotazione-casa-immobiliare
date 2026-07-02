@@ -73,109 +73,220 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<!-- JSON-LD: RealEstateAgent / LocalBusiness (dati verificabili, nessun voto/recensione fittizio in markup) -->
+<!-- JSON-LD: grafo unico di entita' collegate tramite @id (RealEstateAgent,
+     WebSite, WebPage, BreadcrumbList, HowTo, FAQPage). Volutamente NESSUN
+     AggregateRating/Review: le recensioni in pagina sono testimonianze di
+     esempio non verificate da terzi, e Google penalizza i dati strutturati
+     su recensioni non genuine. Aggiungerlo solo quando saranno reali
+     (es. importate da Google Business Profile). -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Quotazione Casa Immobiliare",
-  "image": "https://www.quotazionecasaimmobiliare.it/images/logo.png",
-  "logo": "https://www.quotazionecasaimmobiliare.it/images/logo.png",
-  "url": "https://www.quotazionecasaimmobiliare.it/",
-  "telephone": "+393935401286",
-  "email": "info@quotazionecasaimmobiliare.it",
-  "priceRange": "€€",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Corso Buenos Aires, 1",
-    "addressLocality": "Milano",
-    "addressRegion": "MI",
-    "postalCode": "20124",
-    "addressCountry": "IT"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 45.4779,
-    "longitude": 9.2069
-  },
-  "areaServed": [
-    {"@type": "City", "name": "Milano"},
-    {"@type": "City", "name": "Sesto San Giovanni"},
-    {"@type": "City", "name": "Cinisello Balsamo"},
-    {"@type": "City", "name": "Monza"},
-    {"@type": "City", "name": "Rho"},
-    {"@type": "City", "name": "San Donato Milanese"}
-  ],
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday"],
-      "opens": "09:30",
-      "closes": "13:00"
-    }
-  ]
-}
-</script>
-
-<!-- JSON-LD: FAQPage (utile per SEO e per motori di risposta AI / GEO) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "La valutazione dell'immobile è davvero gratuita e senza impegno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sì. Il sopralluogo, l'analisi comparativa di mercato e il report di valutazione sono completamente gratuiti e non comportano alcun obbligo di affidarci successivamente la vendita del tuo immobile."
+      "@type": "RealEstateAgent",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#business",
+      "name": "Quotazione Casa Immobiliare",
+      "slogan": "Valorizzazione Immobili · A Milano e Provincia",
+      "image": "https://www.quotazionecasaimmobiliare.it/images/logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.quotazionecasaimmobiliare.it/images/logo.png",
+        "width": 1040,
+        "height": 459
+      },
+      "url": "https://www.quotazionecasaimmobiliare.it/",
+      "telephone": "+393935401286",
+      "email": "info@quotazionecasaimmobiliare.it",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Corso Buenos Aires, 1",
+        "addressLocality": "Milano",
+        "addressRegion": "MI",
+        "postalCode": "20124",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.4779,
+        "longitude": 9.2069
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Milano"},
+        {"@type": "City", "name": "Sesto San Giovanni"},
+        {"@type": "City", "name": "Cinisello Balsamo"},
+        {"@type": "City", "name": "Monza"},
+        {"@type": "City", "name": "Rho"},
+        {"@type": "City", "name": "San Donato Milanese"}
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:30",
+          "closes": "13:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+393935401286",
+        "email": "info@quotazionecasaimmobiliare.it",
+        "areaServed": "IT",
+        "availableLanguage": ["Italian"]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.quotazionecasaimmobiliare.it/#form-valutazione",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Valutazione immobiliare gratuita",
+          "description": "Sopralluogo, analisi comparativa di mercato e report di valutazione con strategia di vendita, senza alcun costo ne' impegno.",
+          "provider": {"@id": "https://www.quotazionecasaimmobiliare.it/#business"},
+          "areaServed": [
+            {"@type": "City", "name": "Milano"},
+            {"@type": "City", "name": "Sesto San Giovanni"},
+            {"@type": "City", "name": "Cinisello Balsamo"},
+            {"@type": "City", "name": "Monza"},
+            {"@type": "City", "name": "Rho"},
+            {"@type": "City", "name": "San Donato Milanese"}
+          ]
+        }
       }
     },
     {
-      "@type": "Question",
-      "name": "Sono già seguito da un'altra agenzia, posso comunque richiedere una valutazione?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Certo. Molti proprietari ci contattano proprio per avere una seconda opinione indipendente e capire se il prezzo richiesto dalla loro attuale agenzia è davvero in linea con il mercato di Milano e provincia."
+      "@type": "WebSite",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#website",
+      "url": "https://www.quotazionecasaimmobiliare.it/",
+      "name": "Quotazione Casa Immobiliare",
+      "inLanguage": "it-IT",
+      "publisher": {"@id": "https://www.quotazionecasaimmobiliare.it/#business"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#webpage",
+      "url": "https://www.quotazionecasaimmobiliare.it/",
+      "name": "Valutazione Gratuita Casa a Milano | Quotazione Casa Immobiliare",
+      "description": "Vendi il tuo immobile al massimo del suo valore. Valutazione professionale gratuita e senza impegno a Milano e provincia, con accesso al nostro database di acquirenti e investitori.",
+      "inLanguage": "it-IT",
+      "isPartOf": {"@id": "https://www.quotazionecasaimmobiliare.it/#website"},
+      "about": {"@id": "https://www.quotazionecasaimmobiliare.it/#business"},
+      "breadcrumb": {"@id": "https://www.quotazionecasaimmobiliare.it/#breadcrumb"},
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-copy h1", ".hero-copy p.sub"]
       }
     },
     {
-      "@type": "Question",
-      "name": "Quanto tempo richiede la valutazione di un immobile?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Il sopralluogo dura circa 30 minuti. Il report di valutazione scritto, con prezzo consigliato e strategia di vendita, viene consegnato entro 48 ore lavorative."
-      }
+      "@type": "BreadcrumbList",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.quotazionecasaimmobiliare.it/"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Come funziona il database di acquirenti e investitori di Quotazione Casa Immobiliare?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Raccogliamo costantemente richieste da acquirenti e investitori interessati a comprare a Milano e provincia. Quando un immobile corrisponde ai loro criteri, lo proponiamo direttamente, anche prima di pubblicare l'annuncio sui portali immobiliari."
-      }
+      "@type": "HowTo",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#come-funziona",
+      "name": "Come vendere casa con Quotazione Casa Immobiliare",
+      "description": "Il percorso in 4 passaggi dalla richiesta di valutazione gratuita fino al rogito.",
+      "mainEntityOfPage": {"@id": "https://www.quotazionecasaimmobiliare.it/#webpage"},
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Richiedi la valutazione",
+          "text": "Compila il form in 1 minuto: nome, contatto e indirizzo dell'immobile.",
+          "url": "https://www.quotazionecasaimmobiliare.it/#form-valutazione"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Sopralluogo gratuito",
+          "text": "Un consulente visita l'immobile e analizza la zona, senza alcun impegno."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Report e strategia",
+          "text": "Ricevi entro 48h il valore stimato e la strategia di vendita su misura."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Vendita e rogito",
+          "text": "Un consulente ti accompagna in ogni fase, dalla trattativa fino al rogito notarile."
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Quali zone copre Quotazione Casa Immobiliare?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Operiamo a Milano città e nei principali comuni della provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza, Rho e San Donato Milanese."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quali documenti servono per vendere casa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Servono generalmente atto di provenienza, planimetria catastale aggiornata, attestato di prestazione energetica (APE) e visura ipocatastale. Durante il sopralluogo gratuito ti aiutiamo a verificare quali documenti hai già e quali vanno richiesti."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.quotazionecasaimmobiliare.it/#faq",
+      "mainEntityOfPage": {"@id": "https://www.quotazionecasaimmobiliare.it/#webpage"},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "La valutazione dell'immobile è davvero gratuita e senza impegno?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Il sopralluogo, l'analisi comparativa di mercato e il report di valutazione sono completamente gratuiti e non comportano alcun obbligo di affidarci successivamente la vendita del tuo immobile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sono già seguito da un'altra agenzia, posso comunque richiedere una valutazione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Certo. Molti proprietari ci contattano proprio per avere una seconda opinione indipendente e capire se il prezzo richiesto dalla loro attuale agenzia è davvero in linea con il mercato di Milano e provincia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo richiede la valutazione di un immobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il sopralluogo dura circa 30 minuti. Il report di valutazione scritto, con prezzo consigliato e strategia di vendita, viene consegnato entro 48 ore lavorative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come funziona il database di acquirenti e investitori di Quotazione Casa Immobiliare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Raccogliamo costantemente richieste da acquirenti e investitori interessati a comprare a Milano e provincia. Quando un immobile corrisponde ai loro criteri, lo proponiamo direttamente, anche prima di pubblicare l'annuncio sui portali immobiliari."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali zone copre Quotazione Casa Immobiliare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Operiamo a Milano città e nei principali comuni della provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza, Rho e San Donato Milanese."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali documenti servono per vendere casa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Servono generalmente atto di provenienza, planimetria catastale aggiornata, attestato di prestazione energetica (APE) e visura ipocatastale. Durante il sopralluogo gratuito ti aiutiamo a verificare quali documenti hai già e quali vanno richiesti."
+          }
+        }
+      ]
     }
   ]
 }
