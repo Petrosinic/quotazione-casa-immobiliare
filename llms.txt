@@ -21,7 +21,7 @@ Milano città e provincia, tra cui Sesto San Giovanni, Cinisello Balsamo, Monza,
 ## Contatti
 - [Chiama](tel:+393935401286): 393 540 1286
 - [WhatsApp](https://wa.me/393935401286): 393 540 1286
-- [Email](mailto:nicola.experiax8@gmail.com): nicola.experiax8@gmail.com
+- [Email](mailto:info@quotazionecasaimmobiliare.it): info@quotazionecasaimmobiliare.it
 
 ## Note per i crawler
 Questo file segue la convenzione emergente llms.txt per fornire un riassunto sintetico e verificabile dell'attività a motori di risposta basati su AI. Indirizzo e P.IVA presenti sul sito sono ancora segnaposto: aggiornarli con i dati reali dell'agenzia non appena disponibili.

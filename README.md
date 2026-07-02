@@ -23,7 +23,7 @@ robots.txt, sitemap.xml, llms.txt   SEO tecnico e ottimizzazione per motori di r
 ## Stato attuale (già fatto)
 
 - **Dominio**: `www.quotazionecasaimmobiliare.it`, registrato, DNS configurato, HTTPS attivo e forzato. Usato in modo coerente in `CNAME`, canonical, Open Graph, dati strutturati, `sitemap.xml`, `robots.txt`, `llms.txt`/`llms-full.txt`.
-- **Contatti reali**: telefono/WhatsApp `393 540 1286`, email `nicola.experiax8@gmail.com`. Nessun link social (l'agenzia non ne ha).
+- **Contatti reali**: telefono/WhatsApp `393 540 1286`, email `info@quotazionecasaimmobiliare.it`. Nessun link social (l'agenzia non ne ha).
 - **Privacy/Cookie Policy**: generate e ospitate su Iubenda (Privacy Policy ID `57178582`), linkate da footer, form e da `privacy.html`.
 
 ## Prima di pubblicare ufficialmente: cosa resta da personalizzare
