@@ -161,7 +161,7 @@ section { padding: 88px 0; }
    che white-space:nowrap li forza su una riga, alcuni contenitori con
    overflow:hidden o position:fixed li tagliavano invece di scrollare.
    Sotto questa soglia permettiamo l'a capo su piu' righe. */
-@media (max-width: 400px) {
+@media (max-width: 520px) {
   .btn { white-space: normal; text-align: center; padding: 14px 22px; }
 }
 
@@ -178,6 +178,10 @@ section { padding: 88px 0; }
   border: 1.5px solid var(--navy-900);
 }
 .btn-outline:hover { background: var(--navy-900); color: #fff; }
+
+/* Etichette alternative desktop/mobile del bottone in header:
+   di default (desktop) mostra la versione estesa. */
+.btn-label-mobile { display: none; }
 
 .btn-ghost-light {
   background: rgba(255,255,255,0.12);
@@ -260,7 +264,10 @@ section { padding: 88px 0; }
   .header-phone { padding: 13px; margin: -13px; }
   .header-phone span.phone-text { display: none; }
   .nav-toggle { display: block; padding: 12px; margin: -6px; }
-  .header-actions .btn-primary.btn-sm span.btn-full-text { display: none; }
+  /* Sul mobile il bottone in header mostra "Contattaci" invece di
+     "Valutazione gratuita" (troppo lungo per lo spazio disponibile). */
+  .btn-label-desktop { display: none; }
+  .btn-label-mobile { display: inline; }
 }
 
 /* ---------- Hero ---------- */
@@ -489,6 +496,7 @@ section { padding: 88px 0; }
   content: "";
   position: absolute;
   inset: 0;
+  pointer-events: none; /* overlay solo decorativo: non deve intercettare i click */
   background: radial-gradient(circle at 85% 10%, rgba(201,163,90,0.28), transparent 55%);
 }
 .solve-card h3 { color: #fff; position: relative; }
@@ -497,6 +505,7 @@ section { padding: 88px 0; }
 .solve-card ul { list-style: none; margin: 20px 0 26px; padding: 0; display: grid; gap: 12px; position: relative; }
 .solve-card ul li { display: flex; gap: 10px; align-items: center; font-weight: 500; color: #fff; }
 .solve-card ul li svg { color: var(--gold-300); flex: none; }
+.solve-card .btn { position: relative; }
 
 /* ---------- USP / FAB cards ---------- */
 .usp-grid {
@@ -756,7 +765,7 @@ section { padding: 88px 0; }
 /* Sotto i 400px il testo dei bottoni puo' andare su due righe (vedi regola
    .btn white-space:normal sopra), rendendo la barra fissa piu' alta:
    aumentiamo lo spazio riservato per non nascondere il footer sotto. */
-@media (max-width: 400px) { body { padding-bottom: 112px; } }
+@media (max-width: 520px) { body { padding-bottom: 112px; } }
 
 .whatsapp-float {
   position: fixed;
